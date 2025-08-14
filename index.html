@@ -343,7 +343,7 @@
       compressImage(file, 900, 0.75, (b64) => { proofBase64 = b64; });
     });
 
-    function compressImage(file, maxSize = 900, quality = 0.75, cb){
+    function compressImage(file, maxSize = 800, quality = 0.7, cb){
       const reader = new FileReader();
       reader.onload = e => {
         const img = new Image();
